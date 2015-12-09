@@ -8,14 +8,14 @@
   <!--[if IE]>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <![endif]-->
-  <title>Swig - A Node.js and Browser JavaScript Template Engine</title>
+  <title>Swig - 一个适用于Node.js和浏览器的模板引擎</title>
   
 
   
 
   
 
-<link rel="stylesheet" href="/swig/css/swig.css">
+<link rel="stylesheet" href="./css/swig.css">
 
 
 
@@ -29,13 +29,13 @@
   <div class="content row">
     <hgroup class="span7">
       <h1><a href="/swig/">Swig</a></h1>
-      <h2>A Node.js and Browser-based JavaScript Template Engine</h2>
+      <h2>Swig - 一个适用于Node.js和浏览器的模板引擎</h2>
     </hgroup>
     
     <nav class="span5">
       <ul class="mainNav">
-        <li><a href="/swig/docs/">Documentation</a></li>
-        <li><a href="https://github.com/paularmstrong/swig/">Code</a></li>
+        <li><a href="/swig/docs/">文档</a></li>
+        <li><a href="https://github.com/paularmstrong/swig/">代码</a></li>
       </ul>
     </nav>
   
@@ -49,8 +49,8 @@
   <h1>Swig</h1>
 
   <div class="row guttered">
-    <p class="span6">A simple, powerful, and extendable JavaScript Template Engine.</p>
-    <p class="span6">Current Version: <strong>v1.4.2</strong>. <a href="/swig/docs/previous/">Looking for an older version?</a></p>
+    <p class="span6">一个简单、强大、灵活的模板引擎</p>
+    <p class="span6">当前版本 <strong>v1.4.2</strong>. <a href="/swig/docs/previous/">查找之前的版本？</a></p>
   </div>
 
   <hr class="small">
@@ -58,14 +58,14 @@
   <div class="row guttered">
 
     <section class="span6">
-      <h2>Super Quick Start</h2>
+      <h2>快速开始</h2>
 
-      <p>For a more in-depth intro, check out the <a href="/swig/docs/">Getting Started docs</a>.</p>
+      <p>更进一步的学习使用请参考：<a href="/swig/docs/">开始文档</a>.</p>
 
-      <h3>Install Swig</h3>
+      <h3>安装 Swig</h3>
       <pre><code>npm install swig --save</code></pre>
 
-      <h3>Create Your Template</h3>
+      <h3>创建模板</h3>
       <pre><code data-language="swig">&lt;h1&gt;{{ pagename|title }}&lt;/h1&gt;
 &lt;ul&gt;
 {% for author in authors %}
@@ -75,14 +75,14 @@
 {% endfor %}
 &lt;/ul&gt;</code></pre>
 
-      <h3>Render Your Template</h3>
+      <h3>渲染模板</h3>
       <pre><code data-language="javascript">var swig  = require('swig');
 swig.renderFile('/path/to/template.html', {
     pagename: 'awesome people',
     authors: ['Paul', 'Jim', 'Jane']
 });</code></pre>
 
-      <h3>The End Result</h3>
+      <h3>渲染结果</h3>
       <pre><code data-language="html">&lt;h1&gt;Awesome People&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li class="first"&gt;Paul&lt;/li&gt;
@@ -92,24 +92,24 @@ swig.renderFile('/path/to/template.html', {
     </section>
 
     <section class="span6">
-      <h2>Features</h2>
+      <h2>特点：</h2>
       <ul>
-        <li>Available for node.js <em>and</em> major web browsers!</li>
-        <li>Uses similar methodologies as Django, Jinja2, and Twig template engines.</li>
-        <li><a href="http://expressjs.com/">Express</a> compatible.</li>
-        <li>Object-Oriented template inheritance.</li>
-        <li>Apply filters and transformations to output in your templates.</li>
-        <li>Automatically escapes all output for safe HTML rendering.</li>
-        <li>Lots of iteration and conditionals supported.</li>
-        <li>Robust without the bloat.</li>
-        <li>Extendable and customizable.</li>
-        <li>Great <a href="/swig/coverage.html">code coverage</a>.</li>
+        <li>适用于NodeJS <em>和</em> 大部分的浏览器!</li>
+        <li>与Django,Jinja3和Twig相比，API更简单.</li>
+        <li><a href="http://expressjs.com/">Express</a> 兼容.</li>
+        <li>模板可继承.</li>
+        <li>支持过滤器和转换输出</li>
+        <li>自动转义</li>
+        <li>支持循环，条件判断</li>
+        <li>健壮、不臃肿.</li>
+        <li>灵活且可定制</li>
+        <li><a href="/swig/coverage.html">代码覆盖率高</a>.</li>
       </ul>
 
       <hr class="small">
 
-      <h2>Download For the Browser</h2>
-      <p>Swig also works in all major browsers. Just download the following file and follow the <a href="/swig/docs/#browser">Documentation</a>.</p>
+      <h2>浏览器使用</h2>
+      <p>Swig支持大部分的浏览器，下载下面的文件并按文档使用即可<a href="/swig/docs/#browser">文档</a>.</p>
       <p class="download">
         <a href="/swig/js/swig.min.js" class="btn">Download v1.4.2</a><br><br>
         <a href="/swig/js/swig.js">Development</a> | <a href="/swig/js/swig.min.js">Production</a> (<a href="/swig/js/swig.js.map">source map</a>)
@@ -117,7 +117,7 @@ swig.renderFile('/path/to/template.html', {
 
       <hr class="small">
 
-      <h2>Resources</h2>
+      <h2>资源</h2>
 
        <ul>
          <li><a href="https://groups.google.com/forum/#!forum/swig-templates">Mailing List</a></li>
@@ -136,13 +136,12 @@ swig.renderFile('/path/to/template.html', {
 <footer class="content">
   <hr class="small">
   <p>Swig is copyright &copy;2014 <a href="http://paularmstrongdesigns.com">Paul Armstrong</a>, licensed for use under the permissive MIT Open Source License.</p>
-  <a class="forkme" href="https://github.com/paularmstrong/swig">Fork me on GitHub</a>
 </footer>
 
 
   
-<script src="/swig/js/lib/rainbow.min.js"></script>
-<script src="/swig/js/master.js"></script>
+<script src="./js/lib/rainbow.min.js"></script>
+<script src="./js/master.js"></script>
 
 </body>
 </html>
